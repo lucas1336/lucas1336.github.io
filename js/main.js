@@ -14,11 +14,20 @@
 
 		document.querySelector('.contact-form').reset();
 
-		// Send alert with name
-		alert(`Thank you ${fname} ${lname} for your message, but this option currently doesn\'t work. (っ °Д °;)っ`);
+		var tempParams = {
+			from_fname: fname,
+			from_lname: lname,
+			email: email,
+			subject: subject,
+			message: message,
+		}
 
-		// Code made to send email
-		// sendEmail(fname, lname, email, subject, message);
+		emailjs.send('service_d6zdkam', 'template_5lemirh', tempParams)
+			.then(function(res) {
+				console.log("success", res.status);
+			}
+		);
+
 	}
 
 	'use strict';
@@ -180,6 +189,7 @@
 	// 		message => alert("mail sent successfully")
 	// 	);
 	// }
+
 
 
 }());

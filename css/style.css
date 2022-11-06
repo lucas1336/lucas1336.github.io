@@ -335,16 +335,19 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-top: 0;
 }
 .info li .first-block {
-  width: 40%;
+  width: 35%;
+  margin-right: 5%;
   display: inline-block;
   float: left;
   color: #000;
   font-weight: bold;
 }
 .info li .second-block {
-  width: 60%;
+  width: 55%;
+  margin-left: 5%;
   display: inline-block;
   color: rgba(0, 0, 0, 0.5);
+  overflow-wrap: break-word;
 }
 
 .fh5co-social-icons {
@@ -396,7 +399,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 #fh5co-about .fh5co-social-icons li a i {
   font-size: 20px;
@@ -962,7 +965,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 992px) {
   .fh5co-video {
-    height: 450px;
+    /* height: 442px; */
+    height: auto;
+    /* height: 100%; */
   }
 }
 .fh5co-video .overlay {
