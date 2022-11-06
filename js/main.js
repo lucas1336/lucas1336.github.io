@@ -171,7 +171,7 @@
 	// 	Email.send({
 	// 		Host: "smtp.gmail.com",
 	// 		Username: "u202110085@upc.edu.pe",
-	// 		Password: "nlrlgblntqvumjde",
+	// 		Password: "password",
 	// 		To: 'u202110085@upc.edu.pe',
 	// 		From: email,
 	// 		Subject: `${subject}`,
