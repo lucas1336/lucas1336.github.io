@@ -1,5 +1,26 @@
 ;(function () {
+
+	// Listen for a submit event on the form
+	document.querySelector('.contact-form').addEventListener('submit', submitForm); 
 	
+	function submitForm(e) {
+		e.preventDefault();
+		// Get the form data
+		let fname = document.querySelector('#fname').value;
+		let lname = document.querySelector('#lname').value;
+		let email = document.querySelector('#email').value;
+		let subject = document.querySelector('#subject').value;
+		let message = document.querySelector('#message').value;
+
+		document.querySelector('.contact-form').reset();
+
+		// Send alert with name
+		alert(`Thank you ${fname} ${lname} for your message, but this option currently doesn\'t work. (っ °Д °;)っ`);
+
+		// Code made to send email
+		// sendEmail(fname, lname, email, subject, message);
+	}
+
 	'use strict';
 
 	var isMobile = {
@@ -144,6 +165,21 @@
 		// pieChart();
 		skillsWayPoint();
 	});
+
+	// Code made to send an email
+	// function sendEmail(fname, lname, email, subject, message) {
+	// 	Email.send({
+	// 		Host: "smtp.gmail.com",
+	// 		Username: "u202110085@upc.edu.pe",
+	// 		Password: "nlrlgblntqvumjde",
+	// 		To: 'u202110085@upc.edu.pe',
+	// 		From: email,
+	// 		Subject: `${subject}`,
+	// 		Body: `Name: ${fname} ${lname} <br/> Email: ${email} <br/> Message: ${message}`,
+	// 	}).then(
+	// 		message => alert("mail sent successfully")
+	// 	);
+	// }
 
 
 }());
