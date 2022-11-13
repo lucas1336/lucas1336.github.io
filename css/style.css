@@ -262,6 +262,13 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-features .feature-left .feature-copy {
   width: 100%;
 }
+/* when media size 991 change width to 60% and margin auto */
+@media screen and (max-width: 991px) {
+  #fh5co-features .feature-left .feature-copy {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
 #fh5co-features .feature-left h3 {
   font-size: 24px;
   font-weight: 400;
@@ -548,11 +555,11 @@ h1, h2, h3, h4, h5, h6, figure {
     margin-left: -10px !important;
   }
 }
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   .timeline > li > .timeline-badge {
     margin-left: -10px !important;
   }
-}
+} */
 .timeline > li > .timeline-badge i {
   display: table-cell;
   vertical-align: middle;
@@ -604,7 +611,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-top: 5px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   ul.timeline:before {
     left: 90px;
   }
